@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.text_center {
+    text-align: center;
+}
+
+/*
+ * 自分が書くcssの前にはこうやって書いた場所がわかりやすくしといて
+ * それか自分で書いたところだけファイル分けるか
+*/
+
+/*
+ * ゆきちゃんゾーン
+*/
+
+/* 囲むタイトル */
+h1 {  
+    position: relative;
+    padding: 0.25em 1em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    }
+    h1:before, h1:after {
+        content: '';
+        position: absolute;
+        top: -7px;
+        width: 2px;
+        height: -webkit-calc(100% + 14px);
+        height: calc(100% + 14px);
+        background-color: rgb(0, 0, 0);
+    }
+    h1:before {
+        left: 7px;
+    }
+    h1:after {
+        right: 7px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #c7c7c7 0%, #999797 100%);
+    transition: .4s;
+    width: 150px;
+    border: none;
+    outline: none;
+}
+
+.back button {
+    display: inline-block;
+    padding: 4px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #c7c7c7 0%, #999797 100%);
+    transition: .4s;
+    width: 100px;
+    border: none;
+}
+
+button:hover {
+    background-image: linear-gradient(45deg, #9b9b9b 0%, #6e6e6e 100%);
+}
+
+.form input[type='submit'] {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, #c7c7c7 0%, #999797 100%);
+    transition: .4s;
+    width: 150px;
+    border: none;
+    outline: none;
+}
+
+.form input[type='submit']:hover {
+    background-image: linear-gradient(45deg, #9b9b9b 0%, #6e6e6e 100%);
+}
+
+.form {
+    position: relative;
+    width: 80%;
+    margin: 40px 3%;
+}
+
+.form input[type='text'] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 0.3em;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    border-bottom: 2px solid #595a5c;
+    background: transparent;
+}
+
+.form input[type='password'] {
+    font: 15px/24px sans-serif;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 0.3em;
+    transition: 0.3s;
+    letter-spacing: 1px;
+    color: black;
+    border: none;
+    border-bottom: 2px solid #595a5c;
+    background: transparent;
+}
+
+.box input[type='text']:focus {
+    border-bottom: 2px solid #7b8eb8;
+    outline: none;
+}
+
+.box input[type='password']:focus {
+    border-bottom: 2px solid #7b8eb8;
+    outline: none;
+}
+
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
+
+.item p {
+    margin: 0px;
+    text-align: center;
+}
+
+.item img {
+    box-shadow: 2px 2px 4px rgb(82, 82, 82);
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border: solid 2px rgb(109, 109, 109);
+}
+
+th {
+    color: #5e5e5e;
+    background: #c7c7c7;
+}
+
+table th, table td {
+    border: dashed 1px rgb(109, 109, 109);
+}
+
+.logo {
+    width: 50px;
+    margin-top: 0px;
+}
+
+.main {
+    display: flex;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main li {
+    margin-left: 36px;
+}
+
+.main a {
+    color: black;
+}
+
+.main a:hover {
+    color: royalblue;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 0px 0%;
+}
+
+/*
+ * QRコード読み取りの部分
+*/
+.reader {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.reader-camera {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+#frame {
+    display: none;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+/* モーダル表示 */
+.modal {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+

@@ -40,7 +40,6 @@ function checkQR() {
   if (code) {
     drawFrame(ctx, code.location);
     openModal(code.data);
-    console.log("hello");
   } else {
     setTimeout(() => {
       checkQR();
@@ -65,7 +64,7 @@ function drawFrame(ctx, pos, options = { color: "yellow", size: 3 }) {
 
 function openModal(url) {
   document.querySelector("#result").innerText = url;
-  document.querySelector("#link").setAttribute("href", "result.php?id=" + url);
+  document.querySelector("#link").setAttribute("href", "item_detail.php?id=" + url);
   document.querySelector("#modal").classList.add("show");
 }
 

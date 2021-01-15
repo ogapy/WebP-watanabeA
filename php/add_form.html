@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>備品登録・削除</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <h1>備品登録・削除</h1>
+
+    <a href="mypage.php">マイページ</a>
+    <a href="">ログアウト</a>
+
+    <form action="add_submit.php" method="GET">
+        <p>
+            名前<br>
+            <input type="text" name="NAME"><br>
+            個数<br>
+            <input type="number" name="QUANTITY"><br>
+            カテゴリ<br>
+            <select name="GENRE_ID">
+                <option value="0">-----</option>
+                <option value="1">本</option>
+                <option value="2">カメラ</option>
+                <option value="3">ビデオカメラ</option>
+                <option value="4">HMD</option>
+                <option value="5">機材</option>
+                <option value="6">工具</option>
+                <option value="7">筆記用具</option>
+            </select>
+        </p>
+        <input type="submit" value="登録">
+    </form>
+
+</body>
+
+</html>

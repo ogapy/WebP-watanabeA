@@ -1,0 +1,47 @@
+- account_registered.php
+ > ユーザの新規登録処理とその結果表示
+
+- account.php
+ > 新規登録フォーム
+
+- AddDelete.html
+
+- barcode_reader.html
+ > バーコード読み取り画面
+
+- code.html
+ > QRコード(qr_reader.php)orバーコード(barcode.php)の読み取り選択画面
+
+- index.php
+ > トップ画面
+ > 新規登録画面(account.php)とログインのリンクがある。
+
+- item_detail.php
+ > アイテムの詳細画面
+ > レンタルボタン、削除ボタンがある
+
+- items.php
+ > ジャンル毎のリスト
+ > 名前から詳細画面(item_detail.php)に飛ぶ
+
+- list.php
+ > 備品リスト
+ > ジャンル名からジャンル毎のリスト(items.php)に飛ぶ
+
+- login_check.php
+ > ログイン処理とその結果表示
+
+- login.php
+ > ログインフォーム
+
+- logout.php
+ > ログアウト画面
+
+- mypage.php
+ > マイページ
+ > 読み取りコード選択画面(code.html)
+ > 備品リスト(list.php)
+ > 備品登録(AddDelete.php)？
+
+- qr_reader.php
+ > QRコード読み取り画面

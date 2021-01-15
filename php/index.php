@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Top画面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <h1>Title</h1>
+    <img src="../images/LabLogo.svg" alt="keitalab" width="100px"><br>
+    <p><button type="button" name="login" onclick="location.href='login.php'"><span>ログイン</span></button><br></p>
+    <p><button type="button" name="touroku" onclick="location.href='account.php'">新規登録</button></p>
+</body>
+
+</html>
